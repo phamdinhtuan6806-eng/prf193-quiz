@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f8ff">
+<title>Học vui lớp 4 • Ôn tập giữa kì I 2026–2027</title>
+<style>
+:root{--bg:#f5f7fe;--ink:#20284b;--sub:#66728e;--line:#e4e9f6;--white:#fff;--blue:#535de6;--violet:#7868e9;--light:#edf0ff;--gold:#f2b73e;--green:#178b69;--red:#c65161;--radius:18px;--shadow:0 14px 36px rgba(44,59,111,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.57 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}a{color:#424bd3;text-underline-offset:3px}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #93b0ff;outline-offset:2px}
+.app{display:grid;grid-template-columns:258px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow-y:auto;padding:27px 18px 20px;background:white;border-right:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;padding:3px 10px 20px}.brand-icon{display:grid;place-items:center;width:47px;height:47px;font-size:28px;background:#edeaff;border-radius:15px}.brand b{display:block;font-size:18px;letter-spacing:-.6px}.brand span{font-size:12px;color:var(--sub);display:block;margin-top:-4px}.aside-label{margin:17px 13px 7px;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:850;color:#929db4}.nav-button{display:flex;align-items:center;gap:10px;text-align:left;width:100%;border:0;background:transparent;padding:12px;border-radius:12px;color:#55617b;font-weight:650;font-size:14px;line-height:1.35;margin:3px 0}.nav-button .emoji{font-size:20px;flex:0 0 27px}.nav-button.active{background:var(--light);color:#434bd0}.nav-button:hover{background:#f5f6fd}.nav-button.active:hover{background:var(--light)}.aside-foot{margin:24px 6px 0;padding:14px;background:#f7f8fd;border:1px solid var(--line);border-radius:15px;font-size:12px;color:var(--sub)}
+.main{min-width:0;max-width:1200px;width:100%;margin:0 auto;padding:26px 40px 85px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px}.topbar .today{font-size:13px;color:var(--sub);font-weight:650}.topbar-right{display:flex;gap:9px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.student-pill{border:1px solid var(--line);background:#fff;border-radius:50px;padding:8px 12px;font-size:13px;font-weight:700;color:#424b69}.student-pill:hover{border-color:#c4caf9}.tag{display:inline-flex;align-items:center;border-radius:40px;background:#f0f1ff;color:#5a5ccc;padding:5px 11px;font-size:12px;font-weight:800}.tag.good{background:#e6f6f0;color:#187654}.tag.warn{background:#fff3dd;color:#9b6714}.tag.neutral{background:#eef2f8;color:#64718b}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(27px,3.5vw,39px);line-height:1.25;letter-spacing:-1.4px;margin-bottom:12px}h2{font-size:23px;line-height:1.3;letter-spacing:-.6px;margin-bottom:9px}h3{font-size:18px;line-height:1.32;margin-bottom:10px}.lead{color:#64718b;font-size:15px;max-width:780px}.hero{position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(111deg,#4a56d5,#7864e6 82%);color:white;padding:31px 36px;min-height:230px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:var(--shadow)}.hero h1{margin:8px 0 13px}.hero p{opacity:.9;max-width:580px;font-size:14px;margin:0}.hero .tag{background:#ffffff25;color:#fff;border:1px solid #ffffff55}.hero-art{font-size:85px;transform:rotate(-9deg);flex:0 0 auto;filter:drop-shadow(0 8px 2px #313cad25)}.section-head{margin:31px 0 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}.section-head h2{margin:0}.muted{color:var(--sub)}.small{font-size:13px}.mini{font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.lesson-card{padding:19px 20px;border:1px solid var(--line);background:white;border-radius:19px;box-shadow:0 5px 20px #454e9310;display:flex;flex-direction:column;gap:5px;min-height:199px}.lesson-card-head{display:flex;gap:10px;align-items:center;justify-content:space-between}.lesson-icon{display:grid;place-items:center;background:#f4f3ff;width:46px;height:46px;border-radius:14px;font-size:24px}.lesson-card h3{font-size:17px;margin:10px 0 0}.lesson-card p{color:var(--sub);font-size:13px;margin:1px 0 7px}.lesson-card .row-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:7px}.progress{height:7px;background:#edf0fa;border-radius:10px;overflow:hidden}.progress > span{display:block;height:100%;background:linear-gradient(90deg,#646be7,#8d6df0);border-radius:10px;min-width:0}.btn{border:0;background:var(--blue);color:white;border-radius:12px;padding:11px 16px;font-size:14px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:transform .12s,box-shadow .12s;white-space:normal;text-align:center}.btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 15px #5c65c433}.btn.secondary{color:#525bd7;background:#eef0ff}.btn.ghost{color:#596585;background:white;border:1px solid #dee4f0}.btn.green{background:#18886a}.btn.danger{background:#fff2f4;color:#b74457}.btn.sm{padding:8px 12px;font-size:12px;border-radius:10px}.btn.block{width:100%}.panel{padding:24px 25px;background:white;border:1px solid var(--line);border-radius:21px;box-shadow:0 6px 26px #525a8e0b}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{border-radius:18px;padding:18px;background:white;border:1px solid var(--line)}.stat .big{font-size:30px;font-weight:900;line-height:1.1;letter-spacing:-.7px}.stat .cap{color:var(--sub);font-size:12px;font-weight:650;margin-top:8px}.strip{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0 0}.pill{display:inline-flex;gap:6px;align-items:center;border:1px solid #e2e6f5;border-radius:40px;padding:7px 12px;background:white;font-size:13px;color:#57647f;font-weight:650}.breadcrumb{font-size:13px;color:#747e96;margin:6px 0 18px}.breadcrumb button{border:0;background:transparent;color:#555ed4;font-weight:800;padding:0}.lesson-heading{display:flex;justify-content:space-between;gap:14px;align-items:start;margin:0 0 22px}.lesson-heading .btn{flex-shrink:0}.timing{display:inline-flex;align-items:center;gap:5px;color:#525c7b;background:white;border:1px solid var(--line);border-radius:40px;padding:9px 14px;font-size:13px;font-weight:800}.timing.expired{color:#b94f57;background:#fff2f2;border-color:#f1ccd0}.lesson-section{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:18px 0;box-shadow:0 6px 26px #525a8e0a}.lesson-section-head{border-bottom:1px solid var(--line);background:#fafbff;padding:17px 23px}.lesson-section-head h3{margin:0}.lesson-section-head p{margin:3px 0 0;color:var(--sub);font-size:13px}.passage{background:#fcfaff;border:1px solid #ebe5fb;border-left:4px solid #8173e0;margin:20px 23px 8px;border-radius:12px;padding:21px 24px;line-height:1.85;white-space:pre-line;font-size:15px}.question{margin:0 22px;padding:19px 0 21px;border-bottom:1px dashed #dde3ee}.question:last-child{border-bottom:0}.q-head{display:flex;gap:9px;align-items:flex-start}.q-no{font-size:11px;font-weight:900;background:#eef0ff;color:#5f65d9;border-radius:7px;padding:4px 8px;flex-shrink:0;margin-top:2px}.q-head b{font-weight:750;font-size:15px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0 2px}.choice{display:flex;align-items:center;gap:10px;text-align:left;min-height:53px;padding:10px 14px;border-radius:12px;border:1.5px solid #e3e7f1;background:#fff;color:#414c6b;font-size:14px;line-height:1.35;font-weight:600}.choice .letter{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:9px;background:#f0f2fa;color:#60708e;font-size:12px;font-weight:900}.choice:hover{border-color:#a8aefa;background:#f9f9ff}.choice.selected{border-color:#626ae8;background:#f1f2ff;color:#454bc3}.choice.selected .letter{background:#5a63df;color:white}.choice.correct{border-color:#5fb596;background:#eafaef}.choice.wrong{border-color:#db91a0;background:#fff0f0}.field{width:100%;border:1.5px solid #dce3f1;border-radius:11px;padding:12px 14px;color:var(--ink);background:white;margin-top:13px;min-height:48px}.field:focus{border-color:#7176e4;outline:2px solid #e1e3ff}.field.textarea{min-height:95px;resize:vertical;line-height:1.65}.field.essay{min-height:300px}.field.dictation{min-height:190px}.hint{margin:10px 0 0;color:#80869e;font-size:12px}.q-feedback{background:#f7f9fe;margin-top:12px;padding:10px 13px;border-radius:11px;font-size:13px;color:#58657e;border-left:3px solid #a5aed1}.q-feedback.yes{background:#ebf9f2;border-left-color:#43ae80;color:#207656}.q-feedback.no{background:#fff1f2;border-left-color:#d67581;color:#a54254}.footer-actions{margin:23px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;background:white;border:1px solid var(--line);border-radius:17px;padding:18px 22px}.notice{padding:13px 16px;border-radius:13px;background:#eff2ff;color:#4653ae;font-size:13px}.notice.amber{background:#fff7e7;color:#936818}.notice.green{background:#eaf8f2;color:#247c5d}.notice.red{background:#fff0f1;color:#ac4a5a}.results{padding:25px;background:white;border-radius:22px;border:1px solid var(--line);margin:20px 0}.results .number{font-size:48px;letter-spacing:-1.5px;font-weight:900;line-height:1.1;color:#565dd7}.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}.result-box{border-radius:13px;padding:13px;background:#f7f8fe}.result-box b{font-size:21px;display:block}.result-box span{font-size:12px;color:#6f7b92}.teacher-table{width:100%;border-collapse:collapse;font-size:13px}.teacher-table th,.teacher-table td{padding:12px 7px;border-bottom:1px solid var(--line);text-align:left}.teacher-table th{background:#f8f9fe;color:#62708d}.grade{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:13px}.grade .field{width:90px;margin:0}.word-count{font-size:12px;color:#7a8397;margin:5px 0}.profile-list{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.profile-choice{border:1px solid var(--line);background:white;padding:9px 12px;border-radius:11px;color:#48516c}.profile-choice.selected{border-color:#7076e8;background:#f0f1ff;color:#464ab4;font-weight:800}.modal-overlay{position:fixed;inset:0;background:#18254b81;display:grid;place-items:center;padding:18px;z-index:90}.modal{background:white;max-width:500px;width:100%;border-radius:22px;padding:28px;box-shadow:0 16px 60px #15204a55}.modal h2{font-size:24px}.modal .field{margin:10px 0 14px}.blank{padding:52px 15px;text-align:center}.blank .bigemoji{font-size:55px}.voice{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0 0}.score-chip{font-size:12px;color:#7c85a0;font-weight:750;white-space:nowrap}.grade-card{border:1px solid var(--line);padding:18px;border-radius:14px;margin:12px 0;background:#fff}.grade-card h3{font-size:15px;margin:0 0 8px}.answer-view{background:#f6f7fc;border-radius:10px;padding:10px 13px;white-space:pre-wrap;max-height:260px;overflow:auto;word-break:break-word;color:#445171;font-size:13px}.review-box{background:#f7f9ff;border:1px solid var(--line);border-radius:14px;padding:17px;margin:12px 0}.footline{font-size:12px;text-align:center;color:#93a0b3;margin-top:35px}.mobile-menu{display:none}.teacher-badge{margin-top:13px}.split{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.save-msg{color:#7986a1;font-size:12px}.nowrap{white-space:nowrap}.active-filter{background:#e8effe}.read-select{width:100%;max-width:650px;margin:14px 0 4px;padding:12px 14px;border:1px solid #d6dcf1;border-radius:11px;color:#384461;background:#fff}details.helper{margin:9px 0}details.helper summary{cursor:pointer;color:#5e64c9;font-weight:700;font-size:13px}details.helper p{font-size:13px;color:#66718c;margin:8px 0 0}.audio-error{font-size:12px;color:#bb5260;margin-top:7px}.logo-stars{color:#f2bb52;letter-spacing:1px}.u-hide{display:none!important}
+@media(max-width:1050px){.main{padding:23px 24px 60px}.sidebar{width:235px}.app{grid-template-columns:235px minmax(0,1fr)}}
+@media(max-width:760px){.app{display:block}.sidebar{position:fixed;z-index:40;top:0;left:0;bottom:0;transform:translateX(-110%);transition:transform .18s ease;box-shadow:0 0 60px #27324d3c;width:min(85vw,310px)}.sidebar.open{transform:translateX(0)}.mobile-dim{position:fixed;inset:0;background:#111b4488;z-index:39}.mobile-menu{display:inline-flex}.main{padding:16px 15px 65px}.topbar{margin-bottom:15px}.hero{padding:24px 21px;min-height:200px;border-radius:21px}.hero-art{font-size:49px}.hero h1{font-size:27px}.grid{grid-template-columns:1fr}.stat-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stat{padding:14px}.stat .big{font-size:24px}.choices{grid-template-columns:1fr}.lesson-section-head{padding:16px}.question{margin:0 15px}.passage{margin:15px 15px 5px;padding:16px}.panel{padding:17px}.lesson-heading{flex-direction:column}.result-grid{grid-template-columns:1fr 1fr}.footer-actions{flex-direction:column;align-items:stretch}.footer-actions .btn{width:100%}.lesson-card{min-height:0}.teacher-table{font-size:12px}.teacher-table th,.teacher-table td{padding:8px 4px}}
+@media print{body{background:white}.sidebar,.topbar,.btn,.notice,.footer-actions,.voice,.mobile-dim{display:none!important}.app{display:block}.main{padding:0}.panel,.lesson-section{box-shadow:none;break-inside:avoid}.teacher-table{font-size:12px}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const COURSES=[
+  {
+    "id": "tv_read",
+    "name": "Tiếng Việt • Đọc thành tiếng",
+    "subject": "Tiếng Việt",
+    "icon": "📖",
+    "duration": 0,
+    "date": "27/10",
+    "subtitle": "Luyện đọc rõ ràng, trả lời câu hỏi",
+    "special": "read",
+    "description": "Chọn 1 đoạn, đọc to thành tiếng cho gia sư nghe hoặc tự ghi âm; trả lời 2 câu hỏi. Gia sư chấm 10 điểm.",
+    "readings": [
+      {
+        "name": "Phiếu A — Một buổi sáng đẹp",
+        "text": "Sáng thứ bảy, Lan cùng bố ra công viên gần nhà. Trên những chiếc lá non, các giọt sương long lanh như hạt ngọc. Tiếng chim ríu rít vang lên từ tán phượng. Lan nhìn thấy một bác lao công đang quét lá bên lối đi. Em liền nhặt những mẩu giấy nhỏ gần ghế đá và bỏ vào thùng rác. Bác lao công mỉm cười cảm ơn. Bố xoa đầu Lan và nói: “Giữ cho nơi công cộng sạch đẹp là việc ai cũng có thể làm.” Trên đường về, Lan thấy buổi sáng hôm ấy thật đáng nhớ.",
+        "questions": [
+          "Lan làm việc tốt gì ở công viên?",
+          "Em học được điều gì từ hành động của Lan?"
+        ],
+        "guide": [
+          "Lan nhặt giấy bỏ vào thùng rác.",
+          "Biết giữ vệ sinh nơi công cộng."
+        ]
+      },
+      {
+        "name": "Phiếu B — Món quà của Nam",
+        "text": "Trong lớp, Nam rất thích vẽ. Em thường dành giờ ra chơi để phác họa những bông hoa và hàng cây trước cửa sổ. Một hôm, Nam biết bạn Minh phải nghỉ học vì bị ốm. Nam nghĩ mãi rồi quyết định vẽ một tấm thiệp. Trên thiệp, em vẽ cả lớp đang mỉm cười và viết: “Chúng tớ mong cậu sớm khỏe!” Chiều hôm ấy, cô giáo mang tấm thiệp tới cho Minh. Nhận được món quà, Minh rất vui. Khi trở lại lớp, Minh cảm ơn Nam. Nam hiểu rằng một món quà giản dị cũng có thể đem đến niềm vui lớn.",
+        "questions": [
+          "Nam đã làm gì cho Minh?",
+          "Vì sao món quà của Nam có ý nghĩa?"
+        ],
+        "guide": [
+          "Nam vẽ thiệp thăm hỏi Minh.",
+          "Vì thể hiện sự quan tâm, giúp bạn vui hơn."
+        ]
+      },
+      {
+        "name": "Phiếu C — Hạt mầm nhỏ",
+        "text": "Hà gieo ba hạt đậu vào chiếc chậu đặt bên cửa sổ. Mỗi ngày, em tưới một ít nước và đưa chậu ra nơi có ánh sáng. Những ngày đầu, mặt đất vẫn im lìm. Hà hơi sốt ruột nhưng không bỏ cuộc. Một tuần sau, hai mầm xanh nhú lên. Hà reo vui rồi ghi lại sự thay đổi của cây vào cuốn sổ nhỏ. Cây lớn dần, những chiếc lá mở ra đón nắng. Từ việc chăm sóc chậu đậu, Hà nhận ra rằng muốn có kết quả tốt, chúng ta cần kiên nhẫn và biết chăm chỉ mỗi ngày.",
+        "questions": [
+          "Hà chăm sóc hạt đậu như thế nào?",
+          "Câu chuyện nhắc em điều gì?"
+        ],
+        "guide": [
+          "Tưới nước, đặt cây nơi có ánh sáng, theo dõi.",
+          "Cần chăm chỉ, kiên nhẫn."
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Đọc và trả lời",
+        "questions": [
+          {
+            "id": "read_oral",
+            "prompt": "Đọc đoạn văn thành tiếng (gia sư đánh giá độ chính xác 3đ, ngắt nghỉ/giọng đọc 3đ).",
+            "type": "speaking",
+            "weight": 6,
+            "hint": "Em có thể bấm Ghi âm rồi nghe lại, hoặc đọc trực tiếp cho gia sư."
+          },
+          {
+            "id": "read_q1",
+            "prompt": "Câu hỏi 1:",
+            "type": "long",
+            "weight": 2,
+            "placeholder": "Nhập câu trả lời ngắn..."
+          },
+          {
+            "id": "read_q2",
+            "prompt": "Câu hỏi 2:",
+            "type": "long",
+            "weight": 2,
+            "placeholder": "Nhập câu trả lời ngắn..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tv_comprehension",
+    "name": "Tiếng Việt • Đọc hiểu",
+    "subject": "Tiếng Việt",
+    "icon": "📝",
+    "duration": 30,
+    "date": "27/10",
+    "subtitle": "60% trắc nghiệm • 40% tự luận",
+    "description": "Đọc kỹ bài văn, chọn đáp án và nhập câu trả lời ngắn. Gia sư chấm phần tự luận.",
+    "sections": [
+      {
+        "title": "Bài đọc: Góc thư viện dưới tán phượng",
+        "questions": [],
+        "passage": "Đầu năm học, sân trường của Mai có thêm một chiếc tủ sách nhỏ đặt dưới mái hiên cạnh cây phượng. Trên cửa tủ có dòng chữ: “Mỗi tuần một cuốn sách hay”. Chiếc tủ do các thầy cô và phụ huynh cùng đóng góp. Có sách truyện, sách khoa học, sách về thiên nhiên và những cuốn sách kể chuyện lịch sử.\n\nGiờ ra chơi đầu tiên, nhiều bạn kéo đến xem. Mai tìm thấy một cuốn truyện về biển cả. Em ngồi ngay ngắn trên ghế đá, chăm chú lật từng trang. Gió nhẹ thổi qua, vài chiếc lá phượng rơi xuống bên chân. Thấy Bình loay hoay chưa chọn được sách, Mai nhẹ nhàng giới thiệu cho bạn cuốn sách nói về các loài chim mà Bình yêu thích.\n\nTừ hôm đó, lớp Mai lập một bảng theo dõi mượn sách. Bạn nào đọc xong có thể kể lại nội dung hoặc giới thiệu một điều thú vị cho cả lớp. Sau hai tuần, những giờ ra chơi trở nên nhộn nhịp hơn vì các bạn có thêm nhiều câu chuyện để chia sẻ.\n\nMột buổi chiều, Mai phát hiện vài trang sách bị gấp góc. Em cẩn thận vuốt phẳng từng trang rồi viết một tấm biển nhỏ: “Xin giữ sách sạch, đẹp để bạn sau cũng được đọc!”. Cô giáo khen Mai biết nghĩ cho người khác. Mai hiểu rằng thư viện nhỏ không chỉ giúp các bạn học thêm kiến thức mà còn dạy mọi người cách chia sẻ và giữ gìn của chung."
+      },
+      {
+        "title": "A. Trắc nghiệm — 6 điểm",
+        "questions": [
+          {
+            "id": "c1",
+            "prompt": "Chiếc tủ sách nhỏ được đặt ở đâu?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Trong lớp",
+              "Dưới mái hiên",
+              "Trong nhà ăn",
+              "Trong phòng họp"
+            ],
+            "answer": 1,
+            "explain": "Đoạn đầu: tủ sách dưới mái hiên cạnh cây phượng."
+          },
+          {
+            "id": "c2",
+            "prompt": "Ai đã cùng đóng góp tạo nên tủ sách?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Học sinh lớp Mai",
+              "Chỉ cô giáo",
+              "Thầy cô và phụ huynh",
+              "Khách du lịch"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "c3",
+            "prompt": "Mai giới thiệu cho Bình loại sách nào?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Về các loài chim",
+              "Về xe cộ",
+              "Về bóng đá",
+              "Về nấu ăn"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "c4",
+            "prompt": "Câu nào thể hiện việc Mai biết giữ gìn của chung?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Mai chạy ra sân",
+              "Mai chọn sách",
+              "Mai vuốt phẳng trang sách",
+              "Mai về nhà"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "c5",
+            "prompt": "Từ nào dưới đây là động từ?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "thư viện",
+              "xanh",
+              "đọc",
+              "phượng"
+            ],
+            "answer": 2,
+            "explain": "Động từ chỉ hoạt động, trạng thái. “Đọc” là hoạt động."
+          },
+          {
+            "id": "c6",
+            "prompt": "Ý chính của bài đọc là gì?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Cách trồng cây",
+              "Niềm vui đọc và giữ gìn sách",
+              "Một chuyến đi biển",
+              "Thi đấu thể thao"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "B. Tự luận — 4 điểm",
+        "questions": [
+          {
+            "id": "c7",
+            "prompt": "Nêu HAI việc các bạn lớp Mai làm để chia sẻ niềm vui đọc sách.",
+            "type": "long",
+            "weight": 1,
+            "placeholder": "Em hãy viết câu trả lời...",
+            "hint": "Viết đủ 2 việc."
+          },
+          {
+            "id": "c8",
+            "prompt": "Tìm trong đoạn văn cuối HAI động từ.",
+            "type": "long",
+            "weight": 1
+          },
+          {
+            "id": "c9",
+            "prompt": "Vì sao Mai viết tấm biển nhắc mọi người giữ sách sạch, đẹp?",
+            "type": "long",
+            "weight": 1
+          },
+          {
+            "id": "c10",
+            "prompt": "Nếu lớp em có tủ sách chung, em sẽ làm gì để giữ gìn? Trả lời 2–3 câu.",
+            "type": "long",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tv_write",
+    "name": "Tiếng Việt • Viết",
+    "subject": "Tiếng Việt",
+    "icon": "✍️",
+    "duration": 40,
+    "date": "28/10",
+    "subtitle": "100% tự luận • viết trực tiếp",
+    "description": "Nghe – viết (luyện thêm) và viết bài văn. Tất cả được gia sư chấm; phần chính tả mô phỏng, không khẳng định cấu trúc đề trường.",
+    "special": "write",
+    "essayTopics": [
+      "Kể lại một việc tốt em đã làm ở trường hoặc ở nhà.",
+      "Thuật lại một hoạt động đáng nhớ em đã tham gia cùng lớp.",
+      "Kể lại một câu chuyện em đã nghe hoặc đã đọc mà em yêu thích."
+    ],
+    "sections": [
+      {
+        "title": "A. Nghe – viết chính tả (luyện thêm) • 2 điểm",
+        "questions": [
+          {
+            "id": "w_dictation",
+            "prompt": "Bấm “Nghe chính tả” rồi gõ lại đoạn văn vào ô dưới.",
+            "type": "dictation",
+            "weight": 2,
+            "script": "Mỗi buổi sáng, tiếng chim lại đánh thức khu vườn nhỏ. Trên luống đất ẩm, những mầm cây xanh non vươn mình đón nắng. Bà chăm chút từng chậu hoa và nhắc em tưới nước vừa đủ. Em hiểu rằng để cây lớn lên khỏe mạnh, con người cần có tình yêu thiên nhiên và lòng kiên nhẫn.",
+            "placeholder": "Gõ đoạn văn em nghe được..."
+          }
+        ],
+        "desc": "Nếu máy không đọc được tiếng Việt, gia sư có thể đọc theo phần hướng dẫn dành cho giáo viên."
+      },
+      {
+        "title": "B. Tập làm văn (32 phút) • 8 điểm",
+        "questions": [
+          {
+            "id": "w_essay",
+            "prompt": "Viết bài văn hoàn chỉnh. Mở bài → Thân bài → Kết bài.",
+            "type": "long",
+            "weight": 8,
+            "placeholder": "Bắt đầu bài văn của em ở đây...",
+            "hint": "Đủ 3 phần, kể theo thứ tự thời gian, có cảm xúc hoặc bài học."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "global",
+    "name": "Tiếng Anh • Global Success",
+    "subject": "Tiếng Anh Global Success",
+    "icon": "🌎",
+    "duration": 35,
+    "date": "28/10",
+    "subtitle": "Listening 25% • Speaking 25% • Reading 25% • Writing 25%",
+    "description": "Unit 1–5. Nghe giọng đọc máy, trả lời nói hoặc gõ câu trả lời, làm phần đọc và viết.",
+    "sections": [
+      {
+        "title": "A. LISTENING — 2.5 points",
+        "questions": [
+          {
+            "id": "g_l1",
+            "prompt": "Where is Tom from?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Japan",
+              "Australia"
+            ],
+            "answer": 1,
+            "script": "Hello! I am Tom. I am from Australia."
+          },
+          {
+            "id": "g_l2",
+            "prompt": "What time does Lucy get up?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "6:30",
+              "7:30"
+            ],
+            "answer": 0,
+            "script": "I get up at half past six every morning."
+          },
+          {
+            "id": "g_l3",
+            "prompt": "What day does Ben play football?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Saturday",
+              "Sunday"
+            ],
+            "answer": 0,
+            "script": "I play football on Saturdays."
+          },
+          {
+            "id": "g_l4",
+            "prompt": "When is Anna’s birthday?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "May",
+              "March"
+            ],
+            "answer": 1,
+            "script": "My birthday is in March."
+          },
+          {
+            "id": "g_l5",
+            "prompt": "What can Kim do?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Swim",
+              "Ride a bike"
+            ],
+            "answer": 0,
+            "script": "I can swim, but I cannot ride a bike."
+          }
+        ],
+        "desc": "Mỗi câu có nút ▶ Nghe. Có thể nghe lại. Giọng máy đọc hai lượt."
+      },
+      {
+        "title": "B. SPEAKING — 2.5 points",
+        "questions": [
+          {
+            "id": "g_s1",
+            "prompt": "Where are you from?",
+            "type": "speaking",
+            "weight": 0.5,
+            "hint": "Ví dụ: I am from Viet Nam."
+          },
+          {
+            "id": "g_s2",
+            "prompt": "What time do you get up?",
+            "type": "speaking",
+            "weight": 0.5,
+            "hint": "Ví dụ: I get up at six o’clock."
+          },
+          {
+            "id": "g_s3",
+            "prompt": "What do you do on Sundays?",
+            "type": "speaking",
+            "weight": 0.5,
+            "hint": "Ví dụ: I play badminton on Sundays."
+          },
+          {
+            "id": "g_s4",
+            "prompt": "When is your birthday?",
+            "type": "speaking",
+            "weight": 0.5,
+            "hint": "Ví dụ: My birthday is in June."
+          },
+          {
+            "id": "g_s5",
+            "prompt": "Can you swim? What can you do?",
+            "type": "speaking",
+            "weight": 0.5,
+            "hint": "Ví dụ: Yes, I can. I can ride a bike."
+          }
+        ],
+        "desc": "Đọc to hoặc ghi âm. Em có thể gõ lại câu trả lời để gia sư kiểm tra."
+      },
+      {
+        "title": "C. READING — 2.5 points",
+        "questions": [
+          {
+            "id": "g_r1",
+            "prompt": "Alice is from ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Australia",
+              "America"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "g_r2",
+            "prompt": "She gets up at ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "6:30",
+              "7:00"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "g_r3",
+            "prompt": "She plays badminton on ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Fridays",
+              "Saturdays"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "g_r4",
+            "prompt": "Her birthday is in ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "October",
+              "August"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "g_r5",
+            "prompt": "She cannot ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "ride a bike",
+              "swim"
+            ],
+            "answer": 1
+          }
+        ],
+        "passage": "Hello! My name is Alice. I am from Australia. I get up at six thirty every morning. I go to school from Monday to Friday. On Saturdays, I play badminton with my brother. My birthday is in October. I can ride a bike, but I cannot swim."
+      },
+      {
+        "title": "D. WRITING — 2.5 points",
+        "questions": [
+          {
+            "id": "g_w1",
+            "prompt": "I am ______ Viet Nam.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "from"
+            ]
+          },
+          {
+            "id": "g_w2",
+            "prompt": "I get up ______ six o’clock.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "at"
+            ]
+          },
+          {
+            "id": "g_w3",
+            "prompt": "I go to school ______ Mondays.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "on"
+            ]
+          },
+          {
+            "id": "g_w4",
+            "prompt": "My birthday is ______ July.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "in"
+            ]
+          },
+          {
+            "id": "g_w5",
+            "prompt": "I ______ play football, but I can ride a bike.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "cannot",
+              "can't",
+              "can not"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math",
+    "name": "Toán • Đề giữa kỳ",
+    "subject": "Toán",
+    "icon": "🔢",
+    "duration": 40,
+    "date": "29/10",
+    "subtitle": "30% trắc nghiệm • 70% tự luận",
+    "description": "Số có nhiều chữ số, làm tròn, đổi đơn vị, góc, biểu thức và toán có lời văn.",
+    "sections": [
+      {
+        "title": "A. Trắc nghiệm — 3 điểm",
+        "questions": [
+          {
+            "id": "m1",
+            "prompt": "“Bốn triệu không trăm hai mươi lăm nghìn ba trăm linh sáu” viết là:",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "4 250 306",
+              "4 025 306",
+              "4 205 036",
+              "4 025 360"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "m2",
+            "prompt": "Làm tròn 6 478 295 đến hàng trăm nghìn được:",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "6 400 000",
+              "6 470 000",
+              "6 500 000",
+              "6 480 000"
+            ],
+            "answer": 2,
+            "explain": "Xét chữ số hàng chục nghìn là 7 nên làm tròn lên."
+          },
+          {
+            "id": "m3",
+            "prompt": "3 tạ 5 yến bằng:",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "35 kg",
+              "305 kg",
+              "350 kg",
+              "3 500 kg"
+            ],
+            "answer": 2,
+            "explain": "3 tạ = 300 kg; 5 yến = 50 kg."
+          },
+          {
+            "id": "m4",
+            "prompt": "Góc nào là góc tù?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "45°",
+              "90°",
+              "125°",
+              "180°"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "m5",
+            "prompt": "8 000 000 + 70 000 + 600 + 9 =",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "8 070 609",
+              "8 700 609",
+              "8 076 009",
+              "8 007 609"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "m6",
+            "prompt": "Số lớn nhất trong các số sau là:",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "5 087 912",
+              "5 078 921",
+              "5 098 102",
+              "5 089 120"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "title": "B. Tự luận — 7 điểm",
+        "questions": [
+          {
+            "id": "m7a",
+            "prompt": "7a) 45 678 + 28 945 = ?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "74623",
+              "74 623"
+            ],
+            "explain": "45 678 + 28 945 = 74 623"
+          },
+          {
+            "id": "m7b",
+            "prompt": "7b) 90 320 − 47 586 = ?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "42734",
+              "42 734"
+            ]
+          },
+          {
+            "id": "m8val",
+            "prompt": "8) Với a = 12, b = 5, tính 2 500 + a × b. Kết quả là?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "2560",
+              "2 560"
+            ]
+          },
+          {
+            "id": "m8work",
+            "prompt": "8) Viết thứ tự thực hiện phép tính.",
+            "type": "long",
+            "weight": 0.5,
+            "hint": "Phép nhân trước, cộng sau."
+          },
+          {
+            "id": "m9a",
+            "prompt": "9a) 3 m² 7 dm² = ... dm²",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "307"
+            ]
+          },
+          {
+            "id": "m9b",
+            "prompt": "9b) 2 phút 15 giây = ... giây",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "135"
+            ]
+          },
+          {
+            "id": "m9c",
+            "prompt": "9c) 5 tạ 8 yến = ... kg",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "580"
+            ]
+          },
+          {
+            "id": "m10val",
+            "prompt": "10) Một hiệu sách bán ngày 1 được 125 quyển, ngày 2 nhiều hơn 35 quyển, ngày 3 bằng một nửa ngày 2. Cả ba ngày bán được bao nhiêu quyển? Nhập đáp số.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "365",
+              "365 quyển",
+              "365 quyển truyện"
+            ]
+          },
+          {
+            "id": "m10work",
+            "prompt": "10) Trình bày bài giải và các phép tính.",
+            "type": "long",
+            "weight": 1.5,
+            "hint": "Tìm ngày 2, ngày 3, sau đó tính tổng 3 ngày."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oxford",
+    "name": "Oxford English • Đề giữa kỳ",
+    "subject": "Oxford English",
+    "icon": "🇬🇧",
+    "duration": 40,
+    "date": "29/10",
+    "subtitle": "Listening 30% • Reading 40% • Writing 30%",
+    "description": "Family and Friends 4 (Second Edition) • Starter–Unit 5.",
+    "sections": [
+      {
+        "title": "A. LISTENING — 3 points",
+        "questions": [
+          {
+            "id": "o_l1",
+            "prompt": "What is the girl doing now?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Eating soup",
+              "Drinking milk"
+            ],
+            "answer": 1,
+            "script": "A: What are you doing now? B: I am drinking a glass of milk."
+          },
+          {
+            "id": "o_l2",
+            "prompt": "What does the boy usually have for breakfast?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Bread",
+              "Rice"
+            ],
+            "answer": 0,
+            "script": "A: What do you usually have for breakfast? B: I usually have some bread."
+          },
+          {
+            "id": "o_l3",
+            "prompt": "Where did the girl go yesterday?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "The zoo",
+              "The museum"
+            ],
+            "answer": 1,
+            "script": "A: Where did you go yesterday? B: I went to the museum. A: What did you see? B: I saw dinosaurs."
+          },
+          {
+            "id": "o_l4",
+            "prompt": "What did the girl see?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Dinosaurs",
+              "Robots"
+            ],
+            "answer": 0,
+            "script": "A: Where did you go yesterday? B: I went to the museum. A: What did you see? B: I saw dinosaurs."
+          },
+          {
+            "id": "o_l5",
+            "prompt": "Whose racket is it?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Tom’s",
+              "Anna’s"
+            ],
+            "answer": 1,
+            "script": "A: Whose racket is this? Is it Tom’s? B: No, it’s Anna’s."
+          },
+          {
+            "id": "o_l6",
+            "prompt": "What must they do at the roundabout?",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "Turn left",
+              "Turn right"
+            ],
+            "answer": 0,
+            "script": "A: Are we near the cinema? B: Yes. Go straight on and turn left at the roundabout."
+          }
+        ],
+        "desc": "Nghe đoạn hội thoại 2 lượt rồi chọn A hoặc B."
+      },
+      {
+        "title": "B. READING — 4 points",
+        "questions": [
+          {
+            "id": "o_r7",
+            "prompt": "Ben had a party at school.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "o_r8",
+            "prompt": "His friends played music.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "o_r9",
+            "prompt": "Ben is cleaning the living room today.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "o_r10",
+            "prompt": "Ben usually plays football on Sundays.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "o_r11",
+            "prompt": "The red jacket is Ben’s.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "o_r12",
+            "prompt": "The family has to go to the bookshop.",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "o_r13",
+            "prompt": "At the traffic lights, the family must turn ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "left",
+              "right"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "o_r14",
+            "prompt": "The birthday party happened ...",
+            "type": "mc",
+            "weight": 0.5,
+            "options": [
+              "yesterday",
+              "tomorrow"
+            ],
+            "answer": 0
+          }
+        ],
+        "passage": "Yesterday was Ben’s birthday. He had a small party at home. His friends played music and watched a funny film. Ben’s sister made a cake. Today, Ben is cleaning the living room. He usually plays football on Sunday mornings, but today he is helping his mum. His blue jacket is on the sofa. The red jacket is his brother’s. Later, the family has to go to the bookshop. They will go straight on and turn right at the traffic lights."
+      },
+      {
+        "title": "C. WRITING — 3 points",
+        "questions": [
+          {
+            "id": "o_w15",
+            "prompt": "She usually ______ (drink) milk in the morning.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "drinks"
+            ]
+          },
+          {
+            "id": "o_w16",
+            "prompt": "Look! They ______ (play) football now.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "are playing",
+              "'re playing"
+            ]
+          },
+          {
+            "id": "o_w17",
+            "prompt": "Yesterday, I ______ (go) to the museum.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "went"
+            ]
+          },
+          {
+            "id": "o_w18",
+            "prompt": "This is my jacket. It is ______ (my / mine).",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "mine"
+            ]
+          },
+          {
+            "id": "o_w19",
+            "prompt": "We are late. We ______ (have / has) to hurry.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "have"
+            ]
+          },
+          {
+            "id": "o_w20",
+            "prompt": "Why are you happy? ______ I got a present.",
+            "type": "short",
+            "weight": 0.5,
+            "answer": [
+              "because"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "extra",
+    "name": "Luyện nhanh • Củng cố kiến thức",
+    "subject": "Bổ trợ",
+    "icon": "⚡",
+    "duration": 25,
+    "date": "Tự chọn",
+    "subtitle": "27 câu luyện thêm • tự chấm phần lớn",
+    "description": "Trộn Tiếng Việt, Toán, Global Success và Oxford — sau khi đã làm đề chính. Điểm quy đổi trên thang 10.",
+    "sections": [
+      {
+        "title": "Tiếng Việt",
+        "questions": [
+          {
+            "id": "e_tv1",
+            "prompt": "Từ nào là DANH TỪ?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "chạy",
+              "sân trường",
+              "đọc",
+              "vẽ"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "e_tv2",
+            "prompt": "Từ nào là ĐỘNG TỪ?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "cây phượng",
+              "bố mẹ",
+              "chăm sóc",
+              "học sinh"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "e_tv3",
+            "prompt": "Câu viết hoa đúng là:",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "minh và Lan đến Đà Nẵng vào tháng sáu.",
+              "Minh và lan đến Đà nẵng vào tháng sáu.",
+              "Minh và Lan đến Đà Nẵng vào tháng sáu.",
+              "Minh và Lan đến đà nẵng vào tháng sáu."
+            ],
+            "answer": 2
+          },
+          {
+            "id": "e_tv4",
+            "prompt": "Viết 2 câu nêu lợi ích của việc đọc sách.",
+            "type": "long",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "title": "Toán",        "questions": [
+          {
+            "id": "e_m1",
+            "prompt": "Sáu triệu ba trăm linh hai nghìn bốn trăm mười lăm là số:",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "6 302 415",
+              "6 320 415",
+              "6 302 451",
+              "6 032 415"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "e_m2",
+            "prompt": "Số bé nhất là:",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "4 010 900",
+              "4 100 090",
+              "4 001 990"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "e_m3",
+            "prompt": "Làm tròn 8 749 125 đến hàng trăm nghìn:",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "8 700 000",
+              "8 800 000",
+              "8 749 000"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "e_m4",
+            "prompt": "4 tấn 2 tạ = ... kg",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "4200",
+              "4 200"
+            ]
+          },
+          {
+            "id": "e_m5",
+            "prompt": "6 m² = ... dm²",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "600"
+            ]
+          },
+          {
+            "id": "e_m6",
+            "prompt": "Góc 35° là góc gì?",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Góc vuông",
+              "Góc tù",
+              "Góc nhọn",
+              "Góc bẹt"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "e_m7",
+            "prompt": "12 345 + 23 456 − 9 801 = ?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "26000",
+              "26 000"
+            ]
+          },
+          {
+            "id": "e_m8",
+            "prompt": "Nếu a = 7, tính 100 × a + 250 = ?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "950"
+            ]
+          },
+          {
+            "id": "e_m9",
+            "prompt": "Tuần đầu được 48 quyển; tuần sau hơn 12 quyển. Tổng hai tuần là bao nhiêu?",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "108",
+              "108 quyển"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Global Success",
+        "questions": [
+          {
+            "id": "e_g1",
+            "prompt": "Where / you / from / are? (Viết câu đúng.)",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "where are you from",
+              "where are you from?"
+            ]
+          },
+          {
+            "id": "e_g2",
+            "prompt": "What time / get up / do you? (Viết câu đúng.)",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "what time do you get up",
+              "what time do you get up?"
+            ]
+          },
+          {
+            "id": "e_g3",
+            "prompt": "My birthday / in / September / is.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "my birthday is in september",
+              "my birthday is in september."
+            ]
+          },
+          {
+            "id": "e_g4",
+            "prompt": "I / can / sing / but / cannot / dance.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "i can sing but cannot dance",
+              "i can sing but cannot dance."
+            ]
+          },
+          {
+            "id": "e_g5",
+            "prompt": "I play badminton / Sunday / on.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "i play badminton on sunday",
+              "i play badminton on sunday."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Oxford",
+        "questions": [
+          {
+            "id": "e_o1",
+            "prompt": "He usually ___ tennis.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "play",
+              "plays"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "e_o2",
+            "prompt": "They ___ TV now.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "are watching",
+              "watch"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "e_o3",
+            "prompt": "We ___ to the zoo yesterday.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "went",
+              "go"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "e_o4",
+            "prompt": "The shoes are ___.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "their",
+              "theirs"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "e_o5",
+            "prompt": "She ___ to stop at the red light.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "have",
+              "has"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "e_o6",
+            "prompt": "___ bag is this? – It’s mine.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "Why",
+              "Whose"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "e_o7",
+            "prompt": "I am tired ___ I walked a lot.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "because",
+              "why"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "e_o8",
+            "prompt": "They ___ at the concert last night.",
+            "type": "mc",
+            "weight": 1,
+            "options": [
+              "was",
+              "were"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "name": "Oxford Unit 6 • Nâng cao",
+    "subject": "Nâng cao tùy chọn",
+    "icon": "🚀",
+    "duration": 12,
+    "date": "Nếu đã học",
+    "subtitle": "6 câu • so sánh hơn và so sánh nhất",
+    "description": "Chỉ cho học sinh làm nếu trên lớp đã học đến Unit 6. Không bắt buộc cho kỳ kiểm tra.",
+    "sections": [
+      {
+        "title": "Comparatives & superlatives",
+        "questions": [
+          {
+            "id": "a1",
+            "prompt": "The blue bed is ______ (soft) than the metal bed.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "softer"
+            ]
+          },
+          {
+            "id": "a2",
+            "prompt": "The new sofa is ______ (expensive) than the old one.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "more expensive"
+            ]
+          },
+          {
+            "id": "a3",
+            "prompt": "This is the ______ (comfortable) chair in the shop.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "most comfortable"
+            ]
+          },
+          {
+            "id": "a4",
+            "prompt": "A wooden bed is ______ (cheap) than a gold bed.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "cheaper"
+            ]
+          },
+          {
+            "id": "a5",
+            "prompt": "My house is ______ (big) than your house.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "bigger"
+            ]
+          },
+          {
+            "id": "a6",
+            "prompt": "This is the ______ (good) day of my holiday.",
+            "type": "short",
+            "weight": 1,
+            "answer": [
+              "best"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+const DB_KEY='hocvuilop4_giuaky1_2026_v2';
+const APP={db:{profiles:[],selectedId:null},view:'home',lessonId:null,teacherLesson:null,menu:false,recorder:null,recording:null,blobs:{},soundError:'',lastToast:'',showTips:false};
+const $=sel=>document.querySelector(sel);
+function escapeHtml(str){return String(str??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function norm(str){return String(str??'').normalize('NFKC').toLowerCase().trim().replace(/[’‘]/g,"'").replace(/[.,!?;]+$/g,'').replace(/\s+/g,' ');}
+function comparable(s){let v=norm(s);return /^[-\d\s.]+$/.test(v)?v.replace(/[ .]/g,''):v;}
+function equalAnswer(a,b){return comparable(a)===comparable(b);}
+function allQ(l){return l.sections.flatMap(s=>s.questions);}
+function fmt(n){return Math.round(n*100)/100;}
+function lesson(id){return COURSES.find(l=>l.id===id);}
+function user(){return APP.db.profiles.find(p=>p.id===APP.db.selectedId) || null;}
+function getWork(l,create=false){let p=user();if(!p)return null;if(!p.work)p.work={};if(!p.work[l.id]&&create)p.work[l.id]={startedAt:Date.now(),answers:{},grades:{},notes:{},submittedAt:null,readingIdx:0,topicIdx:0};return p.work[l.id]||null;}
+function save(){try{localStorage.setItem(DB_KEY,JSON.stringify(APP.db));}catch(err){APP.lastToast='Máy không lưu được dữ liệu. Hãy xuất bản sao lưu JSON.';}}
+function load(){try{let obj=JSON.parse(localStorage.getItem(DB_KEY)||'null');if(obj&&Array.isArray(obj.profiles)){APP.db=obj;}}catch(err){}if(!user()&&APP.db.profiles.length){APP.db.selectedId=APP.db.profiles[0].id;}}
+function isManual(q){return ['long','speaking','dictation'].includes(q.type);}
+function itemRight(q,value){if(!itemAnswered(q,value))return false;if(q.type==='mc')return Number(value)===q.answer;
+ let answers=Array.isArray(q.answer)?q.answer:[q.answer];return answers.some(ans=>equalAnswer(ans,value));}
+function itemAnswered(q,value){return q.type==='mc'? (value!==undefined && value!==null && value!=='') : String(value??'').trim().length>0;}
+function stats(l,w){let scoreAuto=0,totalAuto=0,manualMax=0,manualScore=0,manualDone=0,manualCount=0,total=0,answered=0;
+ for(let q of allQ(l)){total+=q.weight;let val=w?.answers?.[q.id];if(itemAnswered(q,val))answered++;
+ if(isManual(q)){manualMax+=q.weight;manualCount++;if(w&&Object.prototype.hasOwnProperty.call(w.grades||{},q.id)){manualScore+=Number(w.grades[q.id])||0;manualDone++;}}
+ else{totalAuto+=q.weight;if(w?.submittedAt && itemRight(q,val))scoreAuto+=q.weight;}}
+ return {total,scoreAuto,totalAuto,manualMax,manualScore,manualDone,manualCount,answered,count:allQ(l).length,final:(!!w?.submittedAt&&manualDone===manualCount),raw:scoreAuto+manualScore,score10:total?((scoreAuto+manualScore)/total*10):0};}
+function displayScore(l,w){if(!w?.submittedAt)return 'Chưa nộp';let s=stats(l,w);return s.final?`${fmt(s.score10)}/10`:`${fmt(s.scoreAuto)}/${fmt(s.totalAuto)} tự động`}
+function completionTag(l,w){if(!w)return '<span class="tag neutral">Chưa làm</span>';if(!w.submittedAt)return '<span class="tag warn">Đang làm</span>';let s=stats(l,w);if(s.final)return '<span class="tag good">Đã chấm</span>';return '<span class="tag warn">Chờ gia sư</span>';}
+function toHome(){stopSound();APP.view='home';APP.lessonId=null;APP.menu=false;render();scrollTo(0,0)}
+function openLesson(id){stopSound();let l=lesson(id);if(!l)return;getWork(l,true);save();APP.view='lesson';APP.lessonId=id;APP.menu=false;render();scrollTo(0,0)}
+function goTeacher(){stopSound();APP.view='teacher';APP.menu=false;render();scrollTo(0,0)}
+function showReview(id){stopSound();APP.view='review';APP.lessonId=id;APP.menu=false;render();scrollTo(0,0)}
+function stopSound(){try{window.speechSynthesis?.cancel();}catch(e){} }
+function currentMenuItem(id){return APP.view==='lesson'&&APP.lessonId===id || APP.view==='review'&&APP.lessonId===id;}
+function sidebar(){return `<aside class="sidebar ${APP.menu?'open':''}" id="sidebar">
+ <div class="brand"><div class="brand-icon">🎒</div><div><b>Học Vui Lớp 4</b><span>Ôn tập giữa kỳ I</span></div></div>
+ <div class="aside-label">Bảng điều khiển</div><button class="nav-button ${APP.view==='home'?'active':''}" data-action="home"><span class="emoji">🏠</span> Trang chủ</button>
+ <div class="aside-label">Môn học & kỹ năng</div>
+ ${COURSES.map(l=>`<button class="nav-button ${currentMenuItem(l.id)?'active':''}" data-action="open" data-id="${l.id}"><span class="emoji">${l.icon}</span><span>${escapeHtml(l.name)}</span></button>`).join('')}
+ <div class="aside-label">Dành cho người dạy</div><button class="nav-button ${APP.view==='teacher'?'active':''}" data-action="teacher"><span class="emoji">📊</span> Bảng chấm điểm</button><button class="nav-button ${APP.view==='help'?'active':''}" data-action="help"><span class="emoji">❔</span> Cách sử dụng</button>
+ <div class="aside-foot"><strong>📅 Lịch giữa kỳ</strong><div>27/10: Tiếng Việt đọc<br>28/10: Tiếng Việt viết, Global Success<br>29/10: Toán, Oxford</div></div></aside>`}
+function topbar(){return `<div class="topbar"><div class="split"><button class="btn ghost sm mobile-menu" data-action="menu">☰ Menu</button><span class="today">Năm học 2026–2027 · Lớp 4</span></div><div class="topbar-right"><span class="tag neutral">💾 Lưu trên thiết bị</span><button class="student-pill" data-action="profiles">👤 ${escapeHtml(user()?.name||'Học sinh')} ⌄</button></div></div>`}
+function appFrame(content){$('#root').innerHTML=`<div class="app">${sidebar()}<main class="main">${topbar()}${content}<div class="footline">Bài luyện tự biên soạn dựa trên các kỹ năng trong lịch FPT Schools. Không phải đề thi chính thức. · © 2026 Học Vui</div></main></div>${APP.menu?'<div class="mobile-dim" data-action="menu"></div>':''}`;updateTimer();}
+function empty(){return `<div class="blank"><div class="bigemoji">🧸</div><h2>Chào bạn đến với Học Vui!</h2><p class="muted">Nhập tên học sinh để bắt đầu làm bài trực tiếp trên máy tính.</p><div style="max-width:370px;margin:20px auto"><input id="nameInitial" class="field" maxlength="50" placeholder="Ví dụ: Nguyễn Minh Anh" autocomplete="name"><button class="btn block" style="margin-top:12px" data-action="add-initial">Bắt đầu ôn tập ✨</button></div><p class="small muted">Bài làm sẽ được lưu riêng trên trình duyệt này.</p></div>`}
+function home(){let p=user(),completed=0,pending=0,ongoing=0;if(p){for(let l of COURSES){let w=getWork(l);if(w?.submittedAt){completed++;if(!stats(l,w).final)pending++;}else if(w)ongoing++;}}
+ let cards=COURSES.map(l=>{let w=getWork(l),s=stats(l,w),pct=w?(w.submittedAt?100:Math.round(s.answered/s.count*100)):0;return `<article class="lesson-card"><div class="lesson-card-head"><span class="lesson-icon">${l.icon}</span>${completionTag(l,w)}</div><h3>${escapeHtml(l.name)}</h3><p>${escapeHtml(l.subtitle)}</p><div class="progress"><span style="width:${pct}%"></span></div><div class="row-bottom"><span class="mini muted">${l.duration?`⏱ ${l.duration} phút`:'🎙 Đọc trực tiếp'}</span><button class="btn sm ${w?.submittedAt?'secondary':''}" data-action="${w?.submittedAt?'review':'open'}" data-id="${l.id}">${w?.submittedAt?'Xem kết quả':w?'Làm tiếp':'Bắt đầu'} →</button></div></article>`}).join('');
+ return `<section class="hero"><div><span class="tag">🌟 Ôn tập thông minh</span><h1>Chào ${escapeHtml(p?.name?.split(' ').slice(-2).join(' ')||'em')}!<br>Học mỗi ngày, giỏi hơn mỗi ngày.</h1><p>Chọn môn em muốn luyện tập, nhập đáp án trên máy và xem kết quả ngay sau khi nộp bài.</p></div><div class="hero-art" aria-hidden="true">📚✨</div></section>
+ <div class="stat-grid" style="margin-top:17px"><div class="stat"><div class="big">${completed}<span class="muted" style="font-size:14px">/8</span></div><div class="cap">Đề đã nộp</div></div><div class="stat"><div class="big">${ongoing}</div><div class="cap">Đang làm</div></div><div class="stat"><div class="big">${pending}</div><div class="cap">Chờ gia sư chấm</div></div></div>
+ <div class="section-head"><h2>📚 Chọn bài ôn luyện</h2><span class="small muted">6 bài chính + 2 bài bổ trợ</span></div><div class="grid">${cards}</div>
+ <div class="panel" style="margin-top:25px"><h3>🧑‍🏫 Gợi ý cho gia sư</h3><p class="small muted">Môn trắc nghiệm và điền đáp án được tự chấm. Những phần đọc thành tiếng, Speaking và viết tự luận cần người dạy đánh giá bằng bảng chấm điểm. Điểm hiển thị tạm tính sẽ không tính phần chưa chấm.</p><div class="strip"><span class="pill">📅 27/10: Đọc Tiếng Việt</span><span class="pill">📅 28/10: Viết + Global Success</span><span class="pill">📅 29/10: Toán + Oxford</span></div></div>`}
+function saveAnswer(id,value){let l=lesson(APP.lessonId),w=getWork(l,true);if(!w||w.submittedAt)return;w.answers[id]=value;save();let stat=stats(l,w);let a=$('#progressCount');if(a)a.textContent=`${stat.answered}/${stat.count} nhiệm vụ đã trả lời`;}
+function escText(s){return escapeHtml(s).replace(/\n/g,'<br>')}
+function qHtml(q,idx,l,w){let answered=w?.answers?.[q.id],submitted=!!w?.submittedAt,manual=isManual(q),isCorrect=submitted&&!manual&&itemRight(q,answered),number=`Câu ${idx}`;
+ if(l.special==='read'&&q.id.startsWith('read_q')){let rd=l.readings[w?.readingIdx||0];q={...q,prompt:`${q.id==='read_q1'?'Câu hỏi 1':'Câu hỏi 2'}: ${rd.questions[q.id==='read_q1'?0:1]}`}}
+ let ans=q.options&&q.type==='mc'?`<div class="choices" role="group" aria-label="${escapeHtml(q.prompt)}">${q.options.map((o,i)=>`<button class="choice ${String(answered)===String(i)?'selected':''} ${submitted?(i===q.answer?'correct':String(answered)===String(i)?'wrong':''):''}" data-action="choose" data-qid="${q.id}" data-choice="${i}" ${submitted?'disabled':''} aria-pressed="${String(answered)===String(i)}"><span class="letter">${'ABCD'[i]||i+1}</span>${escapeHtml(o)}</button>`).join('')}</div>`:'';
+ let field='';let placeholders=q.placeholder||'Gõ câu trả lời của em ở đây...';
+ if(q.type==='short'){field=`<input class="field" data-answer="${q.id}" aria-label="Đáp án ${q.id}" value="${escapeHtml(answered??'')}" placeholder="${escapeHtml(placeholders)}" ${submitted?'disabled':''}>`}
+ if(['long','dictation','speaking'].includes(q.type)){let speech=q.type==='speaking',dict=q.type==='dictation',essay=q.id==='w_essay';
+ field=`${(speech||dict)?`<div class="voice">${dict?`<button class="btn secondary sm" data-action="play" data-qid="${q.id}">🔊 Nghe chính tả</button>`:''}${speech?`<button class="btn secondary sm" data-action="record" data-qid="${q.id}" ${submitted?'disabled':''}>🎙 Bắt đầu ghi âm</button><button class="btn ghost sm" data-action="replay" data-qid="${q.id}" id="replay-${q.id}" ${APP.blobs[q.id]?'':'disabled'}>▶ Nghe lại</button>`:''}</div>`:''}
+ <textarea class="field textarea ${essay?'essay':''} ${dict?'dictation':''}" data-answer="${q.id}" aria-label="Câu trả lời ${q.id}" placeholder="${escapeHtml(speech?'Gõ ngắn gọn câu em vừa nói (không bắt buộc nếu đã nói trực tiếp)...':placeholders)}" ${submitted?'disabled':''}>${escapeHtml(answered??'')}</textarea>`}
+ let audio=(q.script&&q.type!=='dictation')?`<div class="voice"><button class="btn secondary sm" data-action="play" data-qid="${q.id}">🔊 Nghe 2 lần</button><span class="small muted">Giọng đọc máy</span></div>`:'';
+ let feedback='';if(submitted){if(manual){let gr=w.grades?.[q.id];feedback=`<div class="q-feedback">🧑‍🏫 ${gr===undefined?'Đang chờ gia sư chấm.':`Gia sư đã chấm: ${fmt(gr)}/${q.weight} điểm.`}${w.notes?.[q.id]?'<br>Nhận xét: '+escapeHtml(w.notes[q.id]):''}</div>`;}
+ else{let good=typeof q.answer==='number'?`${'ABCD'[q.answer]}. ${q.options[q.answer]}`:(Array.isArray(q.answer)?q.answer[0]:q.answer);feedback=`<div class="q-feedback ${isCorrect?'yes':'no'}">${isCorrect?'✅ Chính xác!':'💡 Chưa đúng.'} Đáp án: <strong>${escapeHtml(good)}</strong>${q.explain?`<br>${escapeHtml(q.explain)}`:''}</div>`;}}
+ return `<div class="question" id="q-${q.id}"><div class="q-head"><span class="q-no">${number}</span><div style="flex:1"><b>${escapeHtml(q.prompt)}</b>${q.hint?`<details class="helper"><summary>💡 Gợi ý</summary><p>${escapeHtml(q.hint)}</p></details>`:''}</div><span class="score-chip">${q.weight} điểm</span></div>${audio}${ans}${field}${feedback}</div>`}
+function lessonContent(l){let w=getWork(l,true),ss=stats(l,w),passed=!!w.submittedAt;let sections=l.sections.map(s=>{
+ let qhtml=s.questions.map(q=>qHtml(q,allQ(l).indexOf(q)+1,l,w)).join('');return `<section class="lesson-section"><div class="lesson-section-head"><h3>${escapeHtml(s.title)}</h3>${s.desc?`<p>${escapeHtml(s.desc)}</p>`:''}</div>${s.passage?`<div class="passage">${escapeHtml(s.passage)}</div>`:''}${qhtml}</section>`}).join('');
+ let rd='';if(l.special==='read'){let r=l.readings[w.readingIdx||0];rd=`<div class="panel"><h3>📖 Chọn phiếu đọc</h3><p class="small muted">Chọn một phiếu, sau đó đọc và trả lời câu hỏi. Khi đổi phiếu, câu trả lời của hai câu hỏi sẽ được xóa để làm lại theo đoạn mới.</p><select class="read-select" id="readChoose" ${passed?'disabled':''}>${l.readings.map((r,i)=>`<option value="${i}" ${i===w.readingIdx?'selected':''}>${escapeHtml(r.name)}</option>`).join('')}</select><div class="passage" style="margin:14px 0 5px">${escapeHtml(r.text)}</div>${!passed?'<button class="btn secondary sm" data-action="read-passage">🔊 Nghe đọc mẫu (máy)</button>':''}</div>`}
+ let essay='';if(l.special==='write'){essay=`<div class="panel"><h3>💭 Chọn 1 đề tập làm văn</h3><select class="read-select" id="essayChoose" ${passed?'disabled':''}>${l.essayTopics.map((topic,i)=>`<option value="${i}" ${i===w.topicIdx?'selected':''}>Đề ${'ABC'[i]}: ${escapeHtml(topic)}</option>`).join('')}</select><p class="small muted">Bài làm của em sẽ được lưu cùng đề đã chọn.</p></div>`}
+ let scoring='';if(passed){scoring=resultCard(l,w);}
+ return `<div class="breadcrumb"><button data-action="home">Trang chủ</button> › ${escapeHtml(l.subject)} › ${escapeHtml(l.name)}</div><div class="lesson-heading"><div><div class="strip" style="margin:0 0 10px"><span class="tag">${escapeHtml(l.date)}</span><span class="tag neutral">${escapeHtml(l.subtitle)}</span></div><h1>${l.icon} ${escapeHtml(l.name)}</h1><p class="lead">${escapeHtml(l.description)}</p></div>${l.duration?`<span class="timing" id="timer" data-id="${l.id}">⏱ --:--</span>`:'<span class="timing">🎙 Linh hoạt</span>'}</div>
+ ${passed?`<div class="notice green">✅ Bài này đã được nộp. Em có thể xem đáp án và nhận xét; muốn làm lại hãy bấm “Làm lại đề”.</div>`:`<div class="notice">💾 Bài làm được lưu tự động trên thiết bị này. <strong id="progressCount">${ss.answered}/${ss.count} nhiệm vụ đã trả lời</strong>.</div>`}
+ ${scoring}${rd}${essay}${sections}<div class="footer-actions"><div><strong>${passed?'Đã hoàn thành bài luyện!':'Sẵn sàng nộp bài?'}</strong><div class="save-msg">${passed?'Kiểm tra đáp án và tự ôn lại các lỗi sai.':'Hãy kiểm tra câu trả lời trước khi nộp.'}</div></div><div class="split"><button class="btn ghost" data-action="home">← Trang chủ</button>${passed?`<button class="btn secondary" data-action="restart" data-id="${l.id}">↻ Làm lại đề</button>`:`<button class="btn green" data-action="submit">Nộp bài & xem kết quả ✓</button>`}</div></div>`}
+function resultCard(l,w){let s=stats(l,w),complete=s.final,graded=s.totalAuto+s.manualMax;return `<div class="results"><span class="tag ${complete?'good':'warn'}">${complete?'Bài đã chấm xong':'Đã nộp — chờ gia sư chấm phần tự luận'}</span><h2 style="margin-top:13px">🏆 Kết quả của em</h2><div class="number">${complete?`${fmt(s.score10)} / 10`:`${fmt(s.scoreAuto)} / ${fmt(s.totalAuto)}`}</div><p class="muted small">${complete?'Điểm cuối cùng quy đổi về thang 10.':'Đây chỉ là điểm phần chấm tự động, CHƯA phải tổng điểm bài kiểm tra.'}</p><div class="result-grid"><div class="result-box"><b>${fmt(s.scoreAuto)}/${fmt(s.totalAuto)}</b><span>Phần tự động</span></div><div class="result-box"><b>${s.manualDone}/${s.manualCount}</b><span>Câu gia sư đã chấm</span></div><div class="result-box"><b>${s.answered}/${s.count}</b><span>Nhiệm vụ đã trả lời</span></div></div>${!complete&&s.manualCount?'<div class="notice amber">📌 Gia sư cần mở “Bảng chấm điểm” để chấm các câu tự luận, Speaking hoặc đọc thành tiếng.</div>':''}${complete&&s.score10>=8?'<div class="notice green">🌟 Rất tốt! Em hãy tiếp tục luyện các câu khó để nâng cao điểm số.</div>':''}</div>`}
+function teacher(){let p=user();let trs=COURSES.map(l=>{let w=getWork(l),s=stats(l,w);return `<tr><td>${l.icon} ${escapeHtml(l.name)}</td><td>${completionTag(l,w)}</td><td>${w?.submittedAt?escapeHtml(displayScore(l,w)):'—'}</td><td><button class="btn sm secondary" data-action="teacher-lesson" data-id="${l.id}">${w?.submittedAt?'Chấm / Xem':'Xem'}</button></td></tr>`}).join('');let tLesson=lesson(APP.teacherLesson),w=tLesson?getWork(tLesson):null;
+ return `<div class="breadcrumb"><button data-action="home">Trang chủ</button> › Bảng chấm điểm</div><h1>📊 Bảng chấm điểm gia sư</h1><p class="lead">Kiểm tra bài làm của học sinh, chấm các phần tự luận và lưu điểm. Dữ liệu chỉ có trên trình duyệt đang sử dụng.</p><div class="panel"><div class="section-head" style="margin:0 0 12px"><h3 style="margin:0">👩‍🎓 Chọn học sinh</h3><button class="btn sm secondary" data-action="profiles">+ Thêm học sinh</button></div><div class="profile-list">${APP.db.profiles.map(item=>`<button class="profile-choice ${item.id===p?.id?'selected':''}" data-action="switch" data-id="${item.id}">${escapeHtml(item.name)}</button>`).join('')}</div><div style="overflow-x:auto"><table class="teacher-table"><thead><tr><th>Bài luyện</th><th>Trạng thái</th><th>Điểm</th><th>Thao tác</th></tr></thead><tbody>${trs}</tbody></table></div></div>
+ <div class="panel" style="margin-top:16px"><h3>📥 Lưu và xuất dữ liệu</h3><p class="small muted">Xuất bảng điểm CSV để mở bằng Excel. Xuất JSON nếu muốn chuyển toàn bộ bài làm sang một trình duyệt khác. Không tự đồng bộ qua các máy.</p><div class="split"><button class="btn secondary" data-action="csv">⬇ Xuất điểm CSV</button><button class="btn ghost" data-action="export">⬇ Sao lưu JSON</button><label class="btn ghost" for="importFile">⬆ Nhập bản sao lưu</label><input id="importFile" type="file" accept=".json,application/json" style="display:none"></div></div>
+ ${tLesson?teacherDetail(tLesson,w):''}`}
+function teacherDetail(l,w){let s=stats(l,w);let manual=allQ(l).filter(isManual),mp=manual.length,html='';if(!w)return `<div class="panel" style="margin-top:17px"><h2>${l.icon} ${escapeHtml(l.name)}</h2><div class="notice amber">Học sinh chưa mở bài này nên chưa có bài làm.</div></div>`;
+ if(!w.submittedAt)return `<div class="panel" style="margin-top:17px"><h2>${escapeHtml(l.name)}</h2><div class="notice amber">Học sinh chưa nộp bài. Đã trả lời ${s.answered}/${s.count} câu; gia sư chưa thể chấm.</div></div>`;
+ for(let q of manual){let rd=l.special==='read'?l.readings[w.readingIdx||0]:null,prompt=q.prompt;
+ if(rd&&q.id==='read_q1')prompt=rd.questions[0];if(rd&&q.id==='read_q2')prompt=rd.questions[1];let entered=w.answers[q.id]||'(Chưa nhập câu trả lời — có thể đã trả lời bằng lời nói)';let guide='';if(rd){if(q.id==='read_oral')guide='Đọc đúng tiếng, không bỏ từ (3đ); ngắt nghỉ, tốc độ, giọng đọc (3đ).';if(q.id==='read_q1')guide=rd.guide[0];if(q.id==='read_q2')guide=rd.guide[1];}
+ if(q.id==='w_essay')guide='Đúng yêu cầu, đủ 3 phần (2đ); sự việc rõ, đúng trình tự (3đ); từ ngữ/câu văn (2đ); chính tả/trình bày (1đ).';
+ if(q.id==='w_dictation')guide=`Đoạn chuẩn: ${q.script}`;
+ if(q.id==='c7')guide='Đọc xong kể lại nội dung; giới thiệu sách hay hoặc điều thú vị.';
+ if(q.id==='c8')guide='Ví dụ: phát hiện, vuốt, viết, khen, hiểu, chia sẻ, giữ gìn.';
+ if(q.id==='c9')guide='Để giữ sách sạch đẹp cho những bạn đọc sau.';
+ if(q.id==='c10')guide='Đúng ý, có việc làm cụ thể, viết 2–3 câu.';
+ if(q.id==='m8work')guide='Nêu phép nhân trước, phép cộng sau.';
+ if(q.id==='m10work')guide='Ngày 2: 160 quyển. Ngày 3: 80 quyển. Tổng: 125+160+80=365 quyển.';
+ if(q.type==='speaking'&&l.id==='global'){let guides={'g_s1':'I am from Viet Nam.','g_s2':'I get up at six o’clock.','g_s3':'I play badminton on Sundays.','g_s4':'My birthday is in June.','g_s5':'Yes, I can. I can ride a bike.'};guide=guides[q.id]||''}
+ html+=`<div class="grade-card"><h3>${escapeHtml(prompt)} <span class="score-chip">Tối đa ${q.weight} điểm</span></h3>${q.id==='w_essay'?`<div class="small muted">Đề chọn: ${escapeHtml(l.essayTopics[w.topicIdx||0])}</div>`:''}<div class="answer-view">${escapeHtml(entered)}</div>${guide?`<details class="helper"><summary>📗 Gợi ý đáp án / tiêu chí chấm</summary><p>${escapeHtml(guide)}</p></details>`:''}<div class="grade"><label for="grade-${q.id}">Điểm</label><input type="number" class="field" id="grade-${q.id}" data-grade="${q.id}" data-course="${l.id}" min="0" max="${q.weight}" step="0.1" value="${w.grades?.[q.id]??''}" placeholder="—" aria-label="Điểm câu ${q.id}"><span class="muted small">/ ${q.weight}</span><button class="btn sm ghost" data-action="fullgrade" data-qid="${q.id}" data-course="${l.id}">Cho điểm tối đa</button></div><label class="small muted" for="note-${q.id}">Nhận xét cho học sinh</label><input class="field" id="note-${q.id}" data-grade-note="${q.id}" data-course="${l.id}" placeholder="Điểm tốt / điều cần luyện thêm..." value="${escapeHtml(w.notes?.[q.id]||'')}"></div>`}
+ let listening=allQ(l).filter(q=>q.script).map(q=>`<li><b>${escapeHtml(q.prompt)}</b><div class="small muted">${escapeHtml(q.script)}</div></li>`).join('');let scripts=listening?`<details class="helper"><summary>🔊 Hiện lời thoại / bài đọc cho gia sư</summary><ol>${listening}</ol></details>`:'';
+ return `<div class="panel" style="margin-top:18px" id="teacherDetail"><div class="section-head" style="margin-top:0"><h2>${l.icon} ${escapeHtml(l.name)}</h2><button class="btn sm secondary" data-action="review" data-id="${l.id}">Xem bài đầy đủ →</button></div><div class="notice">Tự chấm: <b>${fmt(s.scoreAuto)}/${fmt(s.totalAuto)}</b> • Tự luận: <b>${s.manualDone}/${s.manualCount} câu đã chấm</b> • ${s.final?`Điểm cuối: <b>${fmt(s.score10)}/10</b>`:'Chưa có điểm cuối cùng'}</div>${l.special==='read'?`<p class="small muted" style="margin-top:15px">Học sinh chọn: <b>${escapeHtml(l.readings[w.readingIdx||0].name)}</b></p>`:''}${scripts}${mp?`<h3 style="margin-top:22px">✍️ Chấm câu tự luận / vấn đáp</h3>${html}<button class="btn green" data-action="save-grades">💾 Lưu điểm đã nhập</button>`:`<div class="notice green" style="margin-top:15px">Không có câu tự luận, điểm đã được chấm tự động.</div>`}</div>`}
+function review(){let l=lesson(APP.lessonId);if(!l)return home();let w=getWork(l);if(!w?.submittedAt){return `<div class="notice amber">Chưa có kết quả. Hãy làm và nộp bài trước.</div><button class="btn" data-action="open" data-id="${l.id}">Mở bài luyện</button>`;}return lessonContent(l)}
+function help(){return `<div class="breadcrumb"><button data-action="home">Trang chủ</button> › Hướng dẫn</div><h1>❔ Hướng dẫn sử dụng</h1><div class="panel"><h2>Em học như thế nào?</h2><ol><li><strong>Chọn môn</strong> ở Trang chủ.</li><li><strong>Trả lời trực tiếp</strong> bằng cách bấm A/B/C/D hoặc gõ câu trả lời.</li><li>Với bài nghe, bấm <strong>🔊 Nghe 2 lần</strong>. Với bài Speaking, nói cho gia sư nghe hoặc thử nút ghi âm khi trình duyệt hỗ trợ.</li><li>Bấm <strong>Nộp bài</strong> để xem đáp án và phần tự chấm.</li><li>Gia sư mở <strong>Bảng chấm điểm</strong> để chấm bài viết, nói, đọc thành tiếng.</li></ol><div class="notice amber">Âm thanh sử dụng giọng đọc có sẵn trên thiết bị, không phải tệp nghe chính thức từ sách. Nếu thiết bị thiếu giọng đọc, gia sư có thể đọc trực tiếp từ lời thoại trong Bảng chấm điểm.</div></div>
+ <div class="panel" style="margin-top:16px"><h2>👩‍🏫 Dành cho gia sư</h2><p>Học sinh có thể làm trên máy tính Windows, Mac hoặc trình duyệt điện thoại. Điểm tự luận cần giáo viên chấm; điểm trung bình trong bài bổ trợ được quy đổi về thang 10. Hệ thống lưu tự động vào <strong>trình duyệt hiện tại</strong>.</p><p><b>Đưa website lên mạng:</b> Đổi tên tệp thành <code>index.html</code> rồi tải lên Netlify Drop hoặc GitHub Pages để tạo liên kết chia sẻ cho học sinh. Khi dùng các máy khác nhau, bài làm vẫn chỉ lưu ở từng máy; xuất JSON để chuyển thủ công.</p><p><b>Giới hạn:</b> Không có tài khoản đăng nhập, không lưu bài vào máy chủ và không đồng bộ từ xa. Nên xuất bản sao lưu sau mỗi buổi học.</p><div class="split"><button class="btn secondary" data-action="export">⬇ Sao lưu toàn bộ</button><button class="btn ghost" data-action="teacher">Mở bảng gia sư</button></div></div>`}
+function modalProfiles(){let p=user(),content=`<div class="modal-overlay" id="profileModal"><div class="modal" role="dialog" aria-modal="true" aria-label="Quản lý học sinh"><h2>👤 Chọn hoặc thêm học sinh</h2><p class="small muted">Mỗi học sinh có bài làm riêng trên thiết bị.</p><div class="profile-list">${APP.db.profiles.map(u=>`<button class="profile-choice ${u.id===p?.id?'selected':''}" data-action="switch-profile" data-id="${u.id}">${escapeHtml(u.name)}</button>`).join('')}</div><label for="newName"><b>Thêm học sinh mới</b></label><input id="newName" class="field" maxlength="50" placeholder="Họ tên học sinh"><div class="split" style="justify-content:space-between"><button class="btn ghost" data-action="close-profiles">Đóng</button><button class="btn" data-action="add-profile">+ Thêm học sinh</button></div></div></div>`;document.body.insertAdjacentHTML('beforeend',content);$('#newName')?.focus()}
+function notify(msg){let old=$('#toast');if(old)old.remove();let el=document.createElement('div');el.id='toast';el.style.cssText='position:fixed;bottom:22px;left:50%;transform:translateX(-50%);max-width:min(92vw,420px);background:#27375c;color:white;padding:12px 19px;border-radius:15px;z-index:99;box-shadow:0 12px 35px #17274855;font-size:13px;text-align:center';el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),3300)}
+function render(){if(!user()){appFrame(empty());return;}let content=APP.view==='home'?home():APP.view==='lesson'?lessonContent(lesson(APP.lessonId)):APP.view==='teacher'?teacher():APP.view==='review'?review():help();appFrame(content);}
+function addProfile(value){let name=String(value||'').replace(/\s+/g,' ').trim();if(!name){notify('Vui lòng nhập tên học sinh.');return;}let id=`s_${Date.now()}_${Math.random().toString(36).slice(2,6)}`;APP.db.profiles.push({id,name,work:{}});APP.db.selectedId=id;APP.view='home';APP.teacherLesson=null;save();document.querySelector('#profileModal')?.remove();render();}
+function updateTimer(){let el=$('#timer');if(!el)return;let l=lesson(el.dataset.id),w=getWork(l);if(!l||!w)return;let seconds=Math.max(0,l.duration*60-Math.floor(((w.submittedAt||Date.now())-w.startedAt)/1000));let mm=Math.floor(seconds/60),ss=seconds%60;el.textContent=`⏱ ${String(mm).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;el.classList.toggle('expired',seconds===0);if(seconds===0&&!w.submittedAt)el.textContent='⏱ Hết giờ luyện';}
+function presentSubmit(){let l=lesson(APP.lessonId),w=getWork(l),s=stats(l,w);if(!w||w.submittedAt)return;let missing=s.count-s.answered;if(!window.confirm(`Em muốn nộp bài ${l.name}?${missing?`\nCòn ${missing} nhiệm vụ chưa có câu trả lời.`:''}\nSau khi nộp, em có thể xem đáp án và kết quả.`))return;w.submittedAt=Date.now();save();render();scrollTo({top:0,behavior:'smooth'});notify('🎉 Đã nộp bài! Em hãy xem kết quả nhé.');}
+function changeReading(idx){let l=lesson(APP.lessonId),w=getWork(l);if(!w||w.submittedAt)return;if((w.answers.read_q1||w.answers.read_q2)&&!confirm('Đổi phiếu sẽ xóa hai câu trả lời đã nhập. Em muốn đổi chứ?')){render();return;}w.readingIdx=idx;w.answers.read_q1='';w.answers.read_q2='';save();render();}
+function changeEssay(idx){let l=lesson(APP.lessonId),w=getWork(l);if(!w||w.submittedAt)return;if(String(w.answers.w_essay||'').trim()&&!confirm('Đổi đề mới nhưng giữ nguyên bài văn đang viết?'))return;w.topicIdx=idx;save();render();}
+function speakText(text,lang='en-US',repeat=2,rate=.86){stopSound();if(!('speechSynthesis' in window)){notify('Trình duyệt không có tính năng đọc. Gia sư hãy đọc lời thoại trong phần Bảng chấm điểm.');return;}
+ try{let synth=window.speechSynthesis;let voices=synth.getVoices();let list=voices.filter(v=>v.lang.toLowerCase().startsWith(lang==='vi-VN'?'vi':'en'));let voice=list.find(v=>v.lang===lang)||list[0];let queue=[];for(let i=0;i<repeat;i++){let u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=rate;u.pitch=1;u.volume=1;if(voice)u.voice=voice;queue.push(u)}queue.forEach(u=>synth.speak(u));}catch(e){notify('Không mở được giọng đọc. Gia sư có thể đọc lời thoại thay thế.')}}
+function findQuestion(l,id){return allQ(l).find(q=>q.id===id)}
+function playQ(qid){let l=lesson(APP.lessonId),q=findQuestion(l,qid);if(!q?.script)return;let vi=q.type==='dictation';speakText(q.script,vi?'vi-VN':'en-US',vi?1:2,vi?.78:.82);}
+async function doRecord(qid){let btn=document.querySelector(`[data-action="record"][data-qid="${qid}"]`);if(APP.recorder&&APP.recorder.state==='recording'){APP.recorder.stop();if(btn){btn.textContent='🎙 Bắt đầu ghi âm';}return;}
+ if(!navigator.mediaDevices?.getUserMedia||typeof MediaRecorder==='undefined'){notify('Trình duyệt không hỗ trợ ghi âm ở chế độ này. Em hãy nói trực tiếp với gia sư.');return;}
+ try{let stream=await navigator.mediaDevices.getUserMedia({audio:true});let chunks=[];let rec=new MediaRecorder(stream);APP.recorder=rec;rec.ondataavailable=e=>{if(e.data.size>0)chunks.push(e.data)};rec.onstop=()=>{let blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});if(APP.blobs[qid])URL.revokeObjectURL(APP.blobs[qid]);APP.blobs[qid]=URL.createObjectURL(blob);stream.getTracks().forEach(t=>t.stop());APP.recorder=null;notify('Ghi âm xong! Em có thể nghe lại. Lưu ý: ghi âm chỉ tồn tại khi đang mở trang.');let replay=$(`#replay-${qid}`);if(replay)replay.disabled=false};rec.start();if(btn)btn.textContent='⏹ Dừng ghi âm';notify('Đang ghi âm. Bấm nút một lần nữa để dừng.')}catch(err){notify('Không có quyền dùng micro. Em có thể trả lời trực tiếp cho gia sư hoặc gõ câu trả lời.')}}
+function fileDownload(filename,txt,mime='text/plain;charset=utf-8'){let blob=new Blob([txt],{type:mime}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+function exportJSON(){fileDownload('hoc_vui_lop4_sao_luu_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({version:2,exportedAt:new Date().toISOString(),data:APP.db},null,2),'application/json');notify('Đã tạo file sao lưu JSON.');}
+function escapeCsv(x){return '"'+String(x??'').replace(/"/g,'""')+'"'}
+function exportCsv(){let lines=[['Học sinh','Bài luyện','Ngày nộp','Trạng thái','Đã chấm tự động','Điểm phần tự động','Câu tự luận đã chấm','Tổng câu tự luận','Điểm cuối thang 10'].map(escapeCsv).join(',')];for(let p of APP.db.profiles){for(let l of COURSES){let w=p.work?.[l.id];if(!w)continue;let s=stats(l,w);let cols=[p.name,l.name,w.submittedAt?new Date(w.submittedAt).toLocaleString('vi-VN'):'',w.submittedAt?(s.final?'Đã chấm':'Chờ chấm'):'Đang làm',s.totalAuto,s.scoreAuto,s.manualDone,s.manualCount,w.submittedAt&&s.final?fmt(s.score10):''];lines.push(cols.map(escapeCsv).join(','))}}
+ fileDownload('bang_diem_lop4_'+new Date().toISOString().slice(0,10)+'.csv','\ufeff'+lines.join('\r\n'),'text/csv;charset=utf-8');notify('Đã tạo bảng điểm CSV.');}
+async function importJSON(file){if(!file)return;try{let obj=JSON.parse(await file.text());let content=obj.data||obj;if(!Array.isArray(content.profiles)||content.profiles.some(p=>typeof p.id!=='string'||typeof p.name!=='string'||typeof p.work!=='object'))throw Error('Định dạng sai');if(!confirm('Nhập bản sao lưu sẽ THAY THẾ dữ liệu hiện có trên trình duyệt này. Bạn có chắc chắn?'))return;APP.db=content;APP.view='home';APP.teacherLesson=null;if(!user()&&APP.db.profiles.length)APP.db.selectedId=APP.db.profiles[0].id;save();render();notify('Đã nhập bản sao lưu thành công.');}catch(e){notify('Không thể đọc bản sao lưu JSON. Kiểm tra lại tệp.')}}
+function saveGrades(){let l=lesson(APP.teacherLesson),w=getWork(l);if(!w?.submittedAt)return;let inputs=document.querySelectorAll('[data-grade]');for(let input of inputs){let q=findQuestion(l,input.dataset.grade),str=input.value.trim();if(str===''){delete w.grades[q.id];continue;}let n=Number(str);if(!Number.isFinite(n)||n<0||n>q.weight){notify(`Điểm phải trong khoảng từ 0 đến ${q.weight}.`);input.focus();return;}w.grades[q.id]=Math.round(n*10)/10;}
+ for(let input of document.querySelectorAll('[data-grade-note]')){w.notes[input.dataset.gradeNote]=input.value;}save();render();notify('✅ Đã lưu điểm và nhận xét.');}
+function clickAction(evt){let t=evt.target.closest('[data-action]');if(!t)return;let a=t.dataset.action,id=t.dataset.id;
+ if(a==='home')toHome();else if(a==='open')openLesson(id);else if(a==='teacher')goTeacher();else if(a==='help'){APP.view='help';APP.menu=false;render();scrollTo(0,0)}else if(a==='menu'){APP.menu=!APP.menu;render()}
+ else if(a==='review')showReview(id);else if(a==='add-initial')addProfile($('#nameInitial')?.value);else if(a==='profiles')modalProfiles();else if(a==='close-profiles')$('#profileModal')?.remove();else if(a==='add-profile')addProfile($('#newName')?.value);else if(a==='switch-profile'||a==='switch'){APP.db.selectedId=id;APP.teacherLesson=null;save();$('#profileModal')?.remove();APP.menu=false;render()}
+ else if(a==='choose'){saveAnswer(t.dataset.qid,t.dataset.choice);let scroll=window.scrollY;render();scrollTo(0,scroll)}else if(a==='submit')presentSubmit();else if(a==='restart'){if(!confirm('Làm lại bài này sẽ xóa câu trả lời và điểm lần trước. Bạn có muốn tiếp tục?'))return;let l=lesson(id),p=user();p.work[id]={startedAt:Date.now(),answers:{},grades:{},notes:{},submittedAt:null,readingIdx:0,topicIdx:0};save();openLesson(id)}
+ else if(a==='play')playQ(t.dataset.qid);else if(a==='read-passage'){let l=lesson(APP.lessonId),w=getWork(l);speakText(l.readings[w.readingIdx||0].text,'vi-VN',1,.82)}else if(a==='record')doRecord(t.dataset.qid);else if(a==='replay'&&APP.blobs[t.dataset.qid]){let audio=new Audio(APP.blobs[t.dataset.qid]);audio.play().catch(()=>notify('Không thể mở bản ghi âm.'))}
+ else if(a==='teacher-lesson'){APP.teacherLesson=id;render();setTimeout(()=>document.getElementById('teacherDetail')?.scrollIntoView({behavior:'smooth',block:'start'}),80)}else if(a==='save-grades')saveGrades();else if(a==='fullgrade'){let l=lesson(t.dataset.course),q=findQuestion(l,t.dataset.qid),input=document.getElementById('grade-'+q.id);if(input)input.value=q.weight;}
+ else if(a==='csv')exportCsv();else if(a==='export')exportJSON();}
+function onInput(evt){let el=evt.target;
+ if(el.matches('[data-answer]')){saveAnswer(el.dataset.answer,el.value);let chars=el.value.trim().length;let counter=el.parentNode.querySelector('.word-count');if(counter)counter.textContent=`${chars} ký tự`}
+ if(el.id==='nameInitial'&&evt.key==='Enter')addProfile(el.value);}
+function onChange(evt){let el=evt.target;if(el.id==='readChoose')changeReading(Number(el.value));else if(el.id==='essayChoose')changeEssay(Number(el.value));else if(el.id==='importFile')importJSON(el.files?.[0]);}
+load();document.addEventListener('click',clickAction);document.addEventListener('input',onInput);document.addEventListener('change',onChange);document.addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.target?.id==='newName'||e.target?.id==='nameInitial')){e.preventDefault();addProfile(e.target.value)}if(e.key==='Escape')$('#profileModal')?.remove();});window.addEventListener('beforeunload',()=>{stopSound();});setInterval(updateTimer,1000);render();
+</script>
+</body></html>
